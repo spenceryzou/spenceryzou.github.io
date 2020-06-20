@@ -42,7 +42,20 @@ export default class Works extends Component {
                     <FadeInSection>
                     <div class="photo content-body-image">
                         <a href="https://spotifynd-friends.herokuapp.com/">
-                            <img id="card" src={process.env.PUBLIC_URL + "/images/project.jpg"}></img>
+                            <img id="card" src={process.env.PUBLIC_URL + "/images/project.png"}></img>
+                        </a>
+                    </div>
+                    </FadeInSection>
+                    <div class="content-body-text works-text">
+                        <div class="content-title">
+                            <a href="https://designatucsb.com/">Design at UCSB</a>
+                        </div>
+                        Director of Web Development for UC Santa Barbara’s premier student-run design agency, hosting design challenges, workshops, and collaborations with industry partners.
+                    </div>
+                    <FadeInSection>
+                    <div class="photo content-body-image">
+                        <a href="https://spotifynd-friends.herokuapp.com/">
+                            <img id="card" src={process.env.PUBLIC_URL + "/images/macbook.png"}></img>
                         </a>
                     </div>
                     </FadeInSection>

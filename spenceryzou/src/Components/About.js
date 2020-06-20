@@ -15,7 +15,7 @@ export default class About extends Component {
                         Hi there, I'm Spencer! I'm a second year UC Santa Barbara Computer Science student from the Bay Area.
                         I'm interested in Human-Computer Interaction, particulary developing media, interfaces, and graphics that serve
                         to change a user's perception and intuition through design cues. I'm currently searching for
-                        internships for Summer 2020! If you or someone you know is interested, check out this fancy sheet of paper: <a style={{fontStyle: "italic"}} target="_blank" href="https://drive.google.com/file/d/1cBK1KNmMv8Ypru8Uj5dLXweS0iUCLxeY/view?usp=sharing">résumé</a>
+                        internships for Summer 2020! If you or someone you know is interested, check out this fancy sheet of paper: <a style={{fontStyle: "italic"}} target="_blank" href="https://drive.google.com/file/d/1V1SHdTf_qteaFM_QpfKCznRibd8RXEsu/view?usp=sharing">résumé</a>
                         <br></br><br></br>
                         In my free time, I like to read fashion blogs, play soccer (big Manchester City fan), drink boba, and sing!
 

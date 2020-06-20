@@ -4,7 +4,7 @@ import About from './About'
 import Works from './Works'
 import Photos from './Photos'
 import Fun from './Fun'
-import Guestbook from './Guestbook'
+import Contact from './Contact'
 
 export class Body extends Component {
     displayContent = () => {
@@ -20,7 +20,7 @@ export class Body extends Component {
         else if(activeTab === 5)
             return <Fun/>
         else
-            return <Guestbook/>
+            return <Contact/>
     }
     render() {
         return (this.displayContent());

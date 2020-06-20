@@ -27,7 +27,7 @@ function FadeInSection(props) {
     );
 }
 
-export default class Guestbook extends Component {
+export default class Contact extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -103,11 +103,14 @@ export default class Guestbook extends Component {
         if(this.state.name.length >= 20){
             errors += "Name must be longer than 20 characters\n"
         }
-        if(!this.state.description){
-            errors += "Description is required\n"
+        if(!this.state.name){
+            errors += "Name is required\n"
         }
         if(this.state.description.length >= 100){
             errors += "Description must be less than 100 characters\n"
+        }
+        if(!this.state.message){
+            errors += "Message is required\n"
         }
         if(this.state.message.length <= 15){
             errors += "Message must be longer than 15 characters\n"
@@ -134,21 +137,21 @@ export default class Guestbook extends Component {
                             Guestbook
                         </div>
                         <form onSubmit={this.handleSubmit}>
-                            Name: <br></br>
+                            *Name: <br></br>
                             <input
                                 type='text'
                                 name='name'
                                 cols="40"
                                 onChange={this.handleChange}
                             /><br></br>
-                            *Enter a description of yourself: <br></br>
+                            Enter a description of yourself: <br></br>
                             <textarea
                                 type='text'
                                 name='description'
                                 cols="40"
                                 onChange={this.handleChange}
                             /><br></br>
-                            Message:<br></br>
+                            *Message:<br></br>
                             <textarea
                                 rows="4"
                                 cols="40"
@@ -160,13 +163,13 @@ export default class Guestbook extends Component {
                                 <label for="public">Yes</label><br/>
                                 <input type="radio" id="private" name="public" value={this.state.public} onChange={this.handleChange} />
                                 <label for="private">No</label><br/>
-                            *Email Address: <br></br>
+                            Email Address: <br></br>
                             <input
                                 type='text'
                                 name='email'
                                 onChange={this.handleChange}
                             /><br></br>
-                            <input type='submit'/>
+                            <input value="Submit" type='submit'/>
                             {this.state.submitted}
                         </form>
                         <span class="errors">

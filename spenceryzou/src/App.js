@@ -8,7 +8,7 @@ import About from './Components/About'
 import Works from './Components/Works'
 import Photos from './Components/Photos'
 import Fun from './Components/Fun'
-import Guestbook from './Components/Guestbook'
+import Contact from './Components/Contact'
 import config from './config.js'
 const firebase = require('firebase')
 
@@ -95,7 +95,7 @@ export class App extends Component {
       },
       {
         id: 6,
-        title: 'guestbook'
+        title: 'contact'
       }
     ]
     return (
@@ -124,7 +124,7 @@ export class App extends Component {
               <Route path="/works" render={(props) => <Works {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/photos" render={(props) => <Photos {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/fun" render={(props) => <Fun {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
-              <Route path="/guestbook" render={(props) => <Guestbook {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
+              <Route path="/contact" render={(props) => <Contact {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               {/* <Body activeTab={this.state.activeTab} functions={functions}/> */}
           </div>
         </div>
