@@ -59,6 +59,22 @@ export default class Works extends Component {
                         </a>
                     </div>
                     </FadeInSection>
+                    <div class="content-body-text works-text">
+                        <div class="content-title">
+                            <a href="https://xd.adobe.com/view/f4d3444e-e071-4d75-8296-46aaa47b389e-a180/?fullscreen">Flix-In</a>
+                        </div>
+                        High fidelity prototype of a web-based platform offering a community of Netflix enthusiasts to watch, discuss, and review shows and movies together.
+                        Created in a team using Adobe XD as part of the College + Netflix Adobe Creative Jam LIVE.
+                    </div>
+                    <FadeInSection>
+                    <div class="photo content-body-image">
+                        <a href="https://xd.adobe.com/view/f4d3444e-e071-4d75-8296-46aaa47b389e-a180/?fullscreen">
+                            <img id="card" src={process.env.PUBLIC_URL + "/images/flixin.png"}></img>
+                        </a>
+                    </div>
+                    </FadeInSection>
+                </div>
+                <div className="footer">
                 </div>
             </div>
         )
