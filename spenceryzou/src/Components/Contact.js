@@ -136,6 +136,10 @@ export default class Contact extends Component {
                         <div class="content-title">
                             Guestbook
                         </div>
+                        <div>
+                            Just for fun. 
+                        </div>
+                        <div>You can also contact me at spencerzou@ucsb.edu.</div><div> </div>
                         <form onSubmit={this.handleSubmit}>
                             *Name: <br></br>
                             <input

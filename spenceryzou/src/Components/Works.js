@@ -54,7 +54,7 @@ export default class Works extends Component {
                     </div>
                     <FadeInSection>
                     <div class="photo content-body-image">
-                        <a href="https://spotifynd-friends.herokuapp.com/">
+                        <a href="https://designatucsb.com/">
                             <img id="card" src={process.env.PUBLIC_URL + "/images/macbook.png"}></img>
                         </a>
                     </div>
