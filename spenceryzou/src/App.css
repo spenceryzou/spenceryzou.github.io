@@ -215,6 +215,10 @@ a:hover{
   border-radius: 16px;
   background-color: #2fce74;
 }
+#cardSBCL{
+  border-radius: 16px;
+  background-color: #f7fdf4;
+}
 
 #card:hover{
   box-shadow: 0 4px 12px 0 rgba(0,0,0,.16);
@@ -403,4 +407,43 @@ a:hover{
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+
+.inline-block-center{
+  display:inline-block;
+  justify-content: center; 
+  width: 100%;
+}
+
+.links{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link{
+  display: inline-block;
+  vertical-align: middle;
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.link:after{
+  content: ' ';
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.link:last-child:after{
+  content: '';
+}
+
+.link a:link, .link a:visited{
+  color:black;
+  transition-duration: 140ms;
+}
+
+.link a:hover{
+  color: rgb(234, 94, 118);
+  transition-duration: 140ms;
 }

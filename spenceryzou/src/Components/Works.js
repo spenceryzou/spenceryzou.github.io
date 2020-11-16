@@ -34,6 +34,7 @@ export default class Works extends Component {
                         <div class="content-title">
                             <a href="https://spotifynd-friends.herokuapp.com/">Spotifynd Friends</a>
                         </div>
+                        Tech Stack: React, Next.js, Firebase<br></br>
                         Spotifynd Friends is a web app that utilizes the Spotify Web API to
                         analyze and generate compatibility ratings between user's playlists using track
                         audio features.
@@ -46,11 +47,24 @@ export default class Works extends Component {
                         </a>
                     </div>
                     </FadeInSection>
+                <div class="content-body-text works-text">
+                        <div class="content-title">
+                            <a href="https://sbcreativelab.com/">SB Creative Lab</a>
+                        </div>Tech Stack: React, HTML/CSS, Javascript<br></br>
+                        Cofounder and Lead Web Developer for an educational design organization that fosters opportunity and growth for UCSB multidisciplinary design students. Website features micro-interactions with parallax.js, tilt.js, and fullpage.js.
+                    </div>
+                    <FadeInSection>
+                    <div class="photo content-body-image">
+                        <a href="https://sbcreativelab.com/">
+                            <img id="cardSBCL" src={process.env.PUBLIC_URL + "/images/homepage.png"}></img>
+                        </a>
+                    </div>
+                    </FadeInSection>
                     <div class="content-body-text works-text">
                         <div class="content-title">
                             <a href="https://designatucsb.com/">Design at UCSB</a>
                         </div>
-                        Director of Web Development for UC Santa Barbara’s premier student-run design agency, hosting design challenges, workshops, and collaborations with industry partners.
+                        Previously Director of Web Development for UC Santa Barbara’s premier student-run design agency, hosting design challenges, workshops, and collaborations with industry partners.
                     </div>
                     <FadeInSection>
                     <div class="photo content-body-image">

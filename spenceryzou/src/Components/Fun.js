@@ -39,11 +39,18 @@ export default class Fun extends Component {
                 <div class="covers-video content-body-image">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/fyyVU6P9A1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="covers-text content-body-text">        
-                    <div class="content-title"style={{textAlign:"center"}}>
+                <div class="covers-text content-body-text" style={{textAlign:"center"}}>        
+                    <div class="content-title">
                     Graphics
                     </div>
-                    Photoshop Work<br></br><br></br>
+                </div>
+                <div class="covers-video content-body-image">
+                    <img src={process.env.PUBLIC_URL + "/images/doggo.png"}></img>
+                </div>
+            </div>
+            <div class="content-body"> 
+                <div class="covers-text content-body-text">        
+                    Doggo, me, Adobe Illustrator, 2020<br></br><br></br>
                 </div>
             </div>
             <div class="content-body-grid4">
