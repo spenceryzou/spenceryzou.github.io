@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import config from '../config.js'
-const firebase = require('firebase')
+// const firebase = require('firebase')
 
 function FadeInSection(props) {
     const [isVisible, setVisible] = React.useState(false);
@@ -43,25 +42,25 @@ export default class Contact extends Component {
         }
     }
     componentDidMount(){
-        if(!firebase.apps.length){
-            firebase.initializeApp(config)
-        }
-        let ref = firebase.database().ref('data')
-        ref.orderByChild('date').on('value', snapshot => {
-          const data = snapshot.val()
-          let entries = [];
-          for(let index in data){
-              entries.push({
-                  name: data[index].name,
-                  description: data[index].description,
-                  message: data[index].message,
-                  public: data[index].public,
-                  email: data[index].email,
-                  date: data[index].date
-              })
-          }
-          this.setState({entries: entries});
-        })
+        // if(!firebase.apps.length){
+        //     firebase.initializeApp(config)
+        // }
+        // let ref = firebase.database().ref('data')
+        // ref.orderByChild('date').on('value', snapshot => {
+        //   const data = snapshot.val()
+        //   let entries = [];
+        //   for(let index in data){
+        //       entries.push({
+        //           name: data[index].name,
+        //           description: data[index].description,
+        //           message: data[index].message,
+        //           public: data[index].public,
+        //           email: data[index].email,
+        //           date: data[index].date
+        //       })
+        //   }
+        //   this.setState({entries: entries});
+        // })
     }
     handleChange = (e) =>{
         if(e.target.id == "public"){
@@ -91,7 +90,7 @@ export default class Contact extends Component {
                 public: this.state.public,
                 date: new Date().toLocaleString(),
             }
-            firebase.database().ref('data').push().set(submission)
+            // firebase.database().ref('data').push().set(submission)
             this.setState({submitted: ' Successfully submitted!'})
         }
     }

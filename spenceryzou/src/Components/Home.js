@@ -12,7 +12,7 @@ export default class Home extends Component {
                         <div class="namedrop" style={{fontSize:'64px', fontWeight: 'bold', lineHeight:"1.5em"}}>
                         I'm Spencer. 
                         </div>
-                        I'm a UCSB third year studying Computer Science. 
+                        I'm a UCSB Computer Science graduate, previously a SWE at Meta.
                         I'm interested in roles such as Software Engineering, UI/UX Engineering, Web Development, 
                         or anywhere that I can be involved in creating a product! {/* 
                         <br></br><br></br>

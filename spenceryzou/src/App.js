@@ -6,11 +6,7 @@ import Body from './Components/Body'
 import Home from './Components/Home'
 import About from './Components/About'
 import Works from './Components/Works'
-import Photos from './Components/Photos'
-import Fun from './Components/Fun'
-import Contact from './Components/Contact'
 import config from './config.js'
-const firebase = require('firebase')
 
 export class App extends Component {
   constructor(props){
@@ -85,18 +81,6 @@ export class App extends Component {
         id: 3,
         title: 'works'
       },
-      {
-        id: 4,
-        title: 'photos'
-      },
-      {
-        id: 5,
-        title: 'fun'
-      },
-      {
-        id: 6,
-        title: 'contact'
-      }
     ]
     return (
       <div>
@@ -123,9 +107,6 @@ export class App extends Component {
               <Route path="/home" render={(props) => <Home {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/about" render={(props) => <About {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               <Route path="/works" render={(props) => <Works {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
-              <Route path="/photos" render={(props) => <Photos {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
-              <Route path="/fun" render={(props) => <Fun {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
-              <Route path="/contact" render={(props) => <Contact {...props} activeTab={this.state.activeTab} functions={functions}/>}/>
               {/* <Body activeTab={this.state.activeTab} functions={functions}/> */}
           </div>
         </div>
